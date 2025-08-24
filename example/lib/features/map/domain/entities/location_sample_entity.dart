@@ -19,8 +19,7 @@ class LocationSampleEntity extends Equatable {
 
   // Conveniências
   double? get speedKmh => (speedMps == null) ? null : speedMps! * 3.6;
-  DateTime? get timestamp =>
-      (timestampMillis == null) ? null : DateTime.fromMillisecondsSinceEpoch(timestampMillis!);
+  DateTime? get timestamp => (timestampMillis == null) ? null : DateTime.fromMillisecondsSinceEpoch(timestampMillis!);
 
   LocationSampleEntity copyWith({
     double? lat,

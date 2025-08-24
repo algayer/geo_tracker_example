@@ -8,7 +8,7 @@ import 'data/repositories/geo_repository_impl.dart';
 import 'domain/repositories/geo_repository.dart';
 import 'domain/usecases/get_current_location_usecase.dart';
 import 'domain/usecases/get_route_usecase.dart';
-import 'domain/usecases/compute_distance_eta_usecase.dart'; // ⬅️ trocado
+import 'domain/usecases/compute_distance_eta_usecase.dart';
 import 'presentation/cubit/map_cubit.dart';
 import 'presentation/pages/map_page.dart';
 
@@ -28,7 +28,7 @@ class MapModule extends Module {
     // Usecases
     i.addLazySingleton<GetCurrentLocationUseCase>(() => GetCurrentLocationUseCase(i()));
     i.addLazySingleton<GetRouteUseCase>(() => GetRouteUseCase(i()));
-    i.addLazySingleton<ComputeDistanceEtaUseCase>(() => ComputeDistanceEtaUseCase(i())); // ⬅️ novo
+    i.addLazySingleton<ComputeDistanceEtaUseCase>(() => ComputeDistanceEtaUseCase(i()));
 
     // Cubit
     i.add<MapCubit>(() => MapCubit(
@@ -47,10 +47,5 @@ class MapModule extends Module {
         child: const MapPage(),
       ),
     );
-
-    // r.child(
-    //   '/debug',
-    //   child: (context) => const PluginDebugSimplePage(),
-    // );
   }
 }

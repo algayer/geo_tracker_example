@@ -6,6 +6,6 @@ class ComputeDistanceUseCase {
   ComputeDistanceUseCase(this.repo);
 
   Future<double> call(ll.LatLng origin, ll.LatLng destination) {
-    return repo.computeDistanceMeters(origin, destination); // plugin
+    return repo.computeDistanceMeters(origin, destination);
   }
 }
