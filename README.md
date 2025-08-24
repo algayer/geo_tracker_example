@@ -1,7 +1,7 @@
 # geo\_tracker (plugin) + exemplo
 
 Plugin **Android** para captura de localização com **FusedLocationProvider**, cálculo de **distância (Haversine)** e **tempo estimado (ETA)**.
-O app de demonstração fica em **`example/`** e é usado para testar o plugin na prática (mapa com OSM + BLoC + botão “Recalcular”).
+O app de demonstração fica em **`example/`** e é usado para testar o plugin na prática (mapa com OSM + BLoC).
 
 ## O que tem
 
