@@ -1,8 +1,6 @@
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:geo_tracker_example/features/map/presentation/pages/plugin_debug_page.dart';
-
 import '../../core/channels/geo_tracker_channel.dart';
 import 'data/datasources/geo_tracker_datasource.dart';
 import 'data/datasources/route_service.dart';
