@@ -23,8 +23,7 @@ class MapCubit extends Cubit<MapState> {
   static const int _tRecomputeMs = 3000;
 
   // Mock de destino
-  final ll.LatLng mockDestination =
-      const ll.LatLng(-29.70470892010712, -52.43658486085902);
+  final ll.LatLng mockDestination = const ll.LatLng(-29.70470892010712, -52.43658486085902);
 
   // Sequenciador para evitar race conditions entre chamadas concorrentes
   int _seq = 0;
